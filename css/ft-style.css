@@ -1,0 +1,218 @@
+/* ===== Monochrome / Pragmatic Style ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:ital,wght@0,400;1,400&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+:root {
+  --white:   #FFFFFF;
+  --black:   #000000;
+  --dark:    #1A1A1A;
+  --mid:     #555555;
+  --light:   #F5F5F5;
+  --p-deep:  #1A1A1A;
+  --p-main:  #333333;
+  --p-mid:   #777777;
+  --p-soft:  #AAAAAA;
+  --p-pale:  #E8E8E8;
+}
+
+body {
+  background: var(--white) !important;
+  color: var(--dark) !important;
+  font-family: 'Source Serif 4', Georgia, serif !important;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+/* Nav */
+#nav {
+  background: var(--white) !important;
+  border-bottom: 3px solid var(--p-main) !important;
+  box-shadow: none !important;
+}
+#nav a, #nav .site-name {
+  color: var(--black) !important;
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+#nav .site-name {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 22px !important;
+  text-transform: none;
+  color: var(--p-deep) !important;
+}
+#nav a:hover { color: var(--p-mid) !important; opacity: 1 !important; }
+
+/* Page header */
+#page-header {
+  background: var(--white) !important;
+  border-bottom: 3px solid var(--p-main) !important;
+  min-height: 100px !important;
+  box-shadow: none !important;
+}
+#page-header .page-title, #page-header h1 {
+  font-family: 'Playfair Display', serif !important;
+  color: var(--p-deep) !important;
+  font-size: 2.2rem !important;
+}
+
+/* Post cards */
+.post-card, #recent-posts .recent-post-item {
+  background: var(--white) !important;
+  border: none !important;
+  border-top: 2px solid var(--p-pale) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.post-card:hover, #recent-posts .recent-post-item:hover {
+  box-shadow: none !important;
+  border-top-color: var(--p-main) !important;
+}
+
+/* Titles */
+.post-title a, .article-title a, h1.post-title {
+  font-family: 'Playfair Display', serif !important;
+  color: var(--p-deep) !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+.post-title a:hover, .article-title a:hover {
+  color: var(--p-mid) !important;
+}
+
+/* Article body */
+.post-content, #article-container {
+  font-family: 'Source Serif 4', Georgia, serif !important;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--dark) !important;
+}
+#article-container h1,
+#article-container h2,
+#article-container h3 {
+  font-family: 'Playfair Display', serif !important;
+  color: var(--p-deep) !important;
+  border-bottom: 2px solid var(--p-soft);
+  padding-bottom: 0.25em;
+  margin-top: 2em;
+}
+#article-container h2 { font-size: 1.6rem; border-bottom-color: var(--p-main); }
+#article-container h3 { font-size: 1.3rem; border-bottom-color: var(--p-soft); }
+
+#article-container a { color: var(--p-main) !important; text-decoration: underline; }
+#article-container a:hover { color: var(--p-mid) !important; }
+
+#article-container blockquote {
+  border-left: 4px solid var(--p-main) !important;
+  background: var(--p-pale) !important;
+  color: var(--mid) !important;
+  font-style: italic;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0 !important;
+}
+
+/* Horizontal rules */
+hr { border-color: var(--p-soft) !important; }
+
+/* Meta */
+.post-meta, .article-meta, .post-meta-date,
+.post-meta-categories, .post-meta-tags {
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-size: 12px !important;
+  color: var(--p-mid) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+/* Tags & Categories */
+.tag-plugin-inline a, .post-meta-tags a, .post-meta-categories a {
+  background: transparent !important;
+  color: var(--p-main) !important;
+  border: 1px solid var(--p-soft) !important;
+  border-radius: 0 !important;
+  font-size: 11px !important;
+  padding: 2px 7px !important;
+  font-family: 'Source Sans 3', sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.tag-plugin-inline a:hover, .post-meta-tags a:hover {
+  border-color: var(--p-main) !important;
+  background: var(--p-pale) !important;
+}
+
+/* Sidebar */
+#aside-content .card-widget {
+  background: var(--white) !important;
+  border: 1px solid var(--p-pale) !important;
+  border-top: 3px solid var(--p-main) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#aside-content .item-headline, .card-widget .item-headline {
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--p-mid) !important;
+  border-bottom: 1px solid var(--p-pale) !important;
+  padding-bottom: 6px;
+}
+
+/* TOC */
+#toc-div { border-left: 3px solid var(--p-soft) !important; }
+#toc-div .toc-content a {
+  color: var(--p-main) !important;
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-size: 14px;
+}
+#toc-div .toc-content a:hover { color: var(--p-deep) !important; }
+
+/* Code */
+figure.highlight, .code-wrapper {
+  border-radius: 0 !important;
+  border: 1px solid var(--p-pale) !important;
+}
+
+/* Pagination */
+.pagination .page-number.current,
+.pagination .page-number:hover {
+  background: var(--p-main) !important;
+  color: var(--white) !important;
+  border-color: var(--p-main) !important;
+}
+
+/* Footer */
+#footer {
+  background: var(--p-deep) !important;
+  color: rgba(255,255,255,0.75) !important;
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-size: 13px;
+  border-top: 3px solid var(--p-main) !important;
+}
+#footer a { color: var(--p-soft) !important; }
+
+/* Reading progress */
+#read-progress { background: var(--p-main) !important; }
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb { background: var(--p-mid) !important; }
+::-webkit-scrollbar-track { background: var(--p-pale) !important; }
+
+/* Dark mode */
+[data-theme="dark"] {
+  --white:  #111111;
+  --light:  #1C1C1C;
+  --dark:   #E8E8E8;
+  --black:  #FFFFFF;
+  --mid:    #888888;
+  --p-deep: #FFFFFF;
+  --p-main: #CCCCCC;
+  --p-mid:  #999999;
+  --p-soft: #666666;
+  --p-pale: #2A2A2A;
+}
