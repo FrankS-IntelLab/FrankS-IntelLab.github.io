@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>FrankS IntelLab</title><link rel="stylesheet" href="/css/ft-style.css"><style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Building a Markdown Note-Taking App — FrankS IntelLab</title><link rel="stylesheet" href="/css/ft-style.css"><style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: #fff; color: #1a1a1a; font-family: 'Source Serif 4', Georgia, serif; }
 
 .site-header {
@@ -8,139 +8,66 @@ body { background: #fff; color: #1a1a1a; font-family: 'Source Serif 4', Georgia,
   align-items: baseline;
   gap: 24px;
 }
-.site-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  font-weight: 700;
-}
-.site-header p {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 13px;
-  color: #777;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
+.site-header h1 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; }
+.site-header h1 a { color: #1a1a1a; text-decoration: none; }
+.site-header p { font-family: 'Source Sans 3', sans-serif; font-size: 13px; color: #999; }
 
-.page-wrapper {
-  max-width: 1200px;
+.post-wrapper {
+  max-width: 720px;
   margin: 0 auto;
-  padding: 48px 40px;
-  display: grid;
-  grid-template-columns: 1fr 260px;
-  gap: 0 60px;
-  align-items: start;
+  padding: 60px 40px;
 }
 
-.landing {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 60px;
-}
-
-.sidebar {
-  position: sticky;
-  top: 40px;
-  padding-left: 28px;
-}
-
-.sidebar-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 0;
-  object-fit: cover;
-  display: block;
-  margin-bottom: 16px;
-  background: #e8e8e8;
-}
-
-.sidebar-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.sidebar-email {
-  display: block;
-  font-size: 12px;
-  color: #aaa;
-  text-decoration: none;
-  margin-bottom: 14px;
-}
-.sidebar-email:hover { color: #555; }
-
-.sidebar-bio {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.65;
-  margin-bottom: 20px;
-}
-
-.sidebar-links {
-  display: flex;
-  gap: 12px;
-}
-
-.sidebar-links a {
+.post-meta {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #1a1a1a;
-  text-decoration: none;
-  border-bottom: 2px solid #1a1a1a;
-  padding-bottom: 2px;
-}
-
-.sidebar-links a:hover { color: #555; border-color: #555; }
-
-@media (max-width: 900px) {
-  .page-wrapper { grid-template-columns: 1fr; }
-  .sidebar { position: static; border-top: none; padding-left: 0; padding-top: 28px; margin-top: 40px; }
-}
-
-.section-label {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #999;
-  background: none;
-  display: block;
-  padding: 0;
-  border-bottom: none;
-  margin-bottom: 28px;
-}
-
-.post-item {
-  border-bottom: 1px solid #e8e8e8;
-  padding: 20px 0;
-}
-.post-item:last-child { border-bottom: none; }
-
-.post-item .meta {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 11px;
   color: #aaa;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
 }
-.post-item h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 8px;
-}
-.post-item h2 a { color: #1a1a1a; text-decoration: none; }
-.post-item h2 a:hover { color: #555; }
-.post-item p { font-size: 15px; color: #555; line-height: 1.6; }
 
-@media (max-width: 700px) {
-  .landing { grid-template-columns: 1fr; padding: 32px 20px; }
-  .site-header { padding: 20px; flex-direction: column; gap: 4px; }
+.post-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 40px;
 }
-</style><meta name="generator" content="Hexo 8.1.1"></head><body><header class="site-header"><h1>FrankS IntelLab</h1><p>Bridging digital intelligence, economics and law to turn expertise into lasting, real-world value.</p></header><main class="page-wrapper"><div class="landing"><section><div class="section-label">Tools &amp; Products</div><article class="post-item"><div class="meta">2026-03-27</div><h2><a href="/2026/03/28/why-dashboards-fail/">Why Most Dashboards Fail</a></h2><p>Dashboards are everywhere. Most of them are useless. Here's the pattern I keep seeing.</p></article><article class="post-item"><div class="meta">2026-03-19</div><h2><a href="/2026/03/20/markdown-note-app/">Building a Markdown Note-Taking App</a></h2><p>A lightweight, offline-first note-taking app built with plain Markdown files and a minimal UI.</p></article></section><section><div class="section-label">Thoughts</div><article class="post-item"><div class="meta">2026-04-01</div><h2><a href="/2026/04/02/quiet-advantage-of-boring/">The Quiet Advantage of Being Boring</a></h2><p>Consistency compounds. The most effective people I know aren't the most exciting ones.</p></article><article class="post-item"><div class="meta">2026-03-31</div><h2><a href="/2026/04/01/thinking-in-systems/">On Thinking in Systems</a></h2><p>Most problems aren't complicated. They're complex. The difference matters more than people realize.</p></article></section></div><aside class="sidebar"><img class="sidebar-avatar" src="/img/avatar.png" alt="Frank" onerror="this.style.display='none'"><div class="sidebar-name">Frank Sun</div><a class="sidebar-email" href="mailto:frank.sun.v@gmail.com">frank.sun.v@gmail.com</a><p class="sidebar-bio">A problem-solving strategist focused on business decision-making and real value creation. Working across data, AI, and economic logic, I craft disciplined intelligence and practical frameworks to turn information into sustainable outcomes.</p><div class="sidebar-links"><a href="https://github.com/FrankS-IntelLab" target="_blank">GitHub</a></div></aside></main></body></html>
+
+.post-content { font-size: 17px; line-height: 1.8; }
+.post-content h2 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; margin: 40px 0 16px; }
+.post-content h3 { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; margin: 32px 0 12px; }
+.post-content p { margin-bottom: 24px; }
+.post-content a { color: #1a1a1a; border-bottom: 1px solid #ddd; text-decoration: none; }
+.post-content a:hover { border-color: #1a1a1a; }
+.post-content ul, .post-content ol { margin: 0 0 24px 24px; }
+.post-content li { margin-bottom: 8px; }
+.post-content blockquote { border-left: 3px solid #ddd; padding-left: 20px; color: #777; margin: 32px 0; }
+.post-content code { font-family: monospace; font-size: 14px; background: #f5f5f5; padding: 2px 6px; }
+.post-content pre { background: #f5f5f5; padding: 20px; overflow-x: auto; margin-bottom: 24px; }
+.post-content pre code { background: none; padding: 0; }
+
+.back-link {
+  display: inline-block;
+  margin-top: 60px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  color: #aaa;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.back-link:hover { color: #1a1a1a; }
+</style><meta name="generator" content="Hexo 8.1.1"></head><body><header class="site-header"><h1><a href="/">FrankS IntelLab</a></h1><p>Bridging digital intelligence, economics and law to turn expertise into lasting, real-world value.</p></header><main class="post-wrapper"><div class="post-meta">2026-03-19</div><h1 class="post-title">Building a Markdown Note-Taking App</h1><div class="post-content"><p>After trying every note app on the market, I built my own. Here’s why and how.</p>
+<h2 id="The-Problem"><a href="#The-Problem" class="headerlink" title="The Problem"></a>The Problem</h2><p>Most note apps are either too heavy, require internet, or lock your data in proprietary formats. I wanted something that stores plain <code>.md</code> files I can read anywhere.</p>
+<h2 id="What-I-Built"><a href="#What-I-Built" class="headerlink" title="What I Built"></a>What I Built</h2><p>A local-first Markdown editor with:</p>
+<ul>
+<li>File-system based storage</li>
+<li>Instant full-text search</li>
+<li>Zero cloud dependency</li>
+</ul>
+<h2 id="Key-Decisions"><a href="#Key-Decisions" class="headerlink" title="Key Decisions"></a>Key Decisions</h2><p><strong>Plain files over databases.</strong> Your notes are just files in a folder. No export needed — they’re already portable.</p>
+<p><strong>No sync built-in.</strong> Use whatever sync tool you already trust: iCloud, Dropbox, or git.</p>
+<h2 id="Takeaway"><a href="#Takeaway" class="headerlink" title="Takeaway"></a>Takeaway</h2><p>The best tool is the one that gets out of your way. Sometimes that means building it yourself.</p>
+</div><a class="back-link" href="/">← Back</a></main></body></html>
