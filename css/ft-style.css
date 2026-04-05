@@ -101,6 +101,8 @@ body {
 #article-container h2 { font-size: 1.6rem; border-bottom-color: var(--p-main); }
 #article-container h3 { font-size: 1.3rem; border-bottom-color: var(--p-soft); }
 
+#article-container img, .post-content img { width: 100%; height: auto; }
+
 #article-container a { color: var(--p-main) !important; text-decoration: underline; }
 #article-container a:hover { color: var(--p-mid) !important; }
 

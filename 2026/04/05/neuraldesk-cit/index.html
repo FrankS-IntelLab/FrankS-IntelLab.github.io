@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>NEURALDESK-CIT: An AI-Powered Corporate Intelligence Terminal — FrankS IntelLab</title><link rel="stylesheet" href="/css/ft-style.css"><style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; color: #1a1a1a; font-family: 'Source Serif 4', Georgia, serif; }
+
+.site-header {
+  border-bottom: 1px solid #ddd;
+  padding: 24px 40px;
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+.site-header h1 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; }
+.site-header h1 a { color: #1a1a1a; text-decoration: none; }
+.site-header p { font-family: 'Source Sans 3', sans-serif; font-size: 13px; color: #999; }
+
+.post-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.post-meta {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 12px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 16px;
+}
+
+.post-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 40px;
+}
+
+.post-content { font-size: 17px; line-height: 1.8; }
+.post-content h2 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; margin: 40px 0 16px; }
+.post-content h3 { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; margin: 32px 0 12px; }
+.post-content p { margin-bottom: 24px; }
+.post-content a { color: #1a1a1a; border-bottom: 1px solid #ddd; text-decoration: none; }
+.post-content a:hover { border-color: #1a1a1a; }
+.post-content ul, .post-content ol { margin: 0 0 24px 24px; }
+.post-content li { margin-bottom: 8px; }
+.post-content blockquote { border-left: 3px solid #ddd; padding-left: 20px; color: #777; margin: 32px 0; }
+.post-content code { font-family: monospace; font-size: 14px; background: #f5f5f5; padding: 2px 6px; }
+.post-content pre { background: #f5f5f5; padding: 20px; overflow-x: auto; margin-bottom: 24px; }
+.post-content pre code { background: none; padding: 0; }
+
+.back-link {
+  display: inline-block;
+  margin-top: 60px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  color: #aaa;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.back-link:hover { color: #1a1a1a; }
+</style><meta name="generator" content="Hexo 8.1.1"></head><body><header class="site-header"><h1><a href="/">FrankS IntelLab</a></h1><p>Bridging digital intelligence, economics and law to turn expertise into lasting, real-world value.</p></header><main class="post-wrapper"><div class="post-meta">2026-04-04</div><h1 class="post-title">NEURALDESK-CIT: An AI-Powered Corporate Intelligence Terminal</h1><div class="post-content"><p>I built NEURALDESK-CIT because I got tired of manually piecing together corporate research from a dozen tabs. Enter a company name, pick your LLM provider, and get a structured intelligence report in seconds.</p>
+<h2 id="What-It-Does"><a href="#What-It-Does" class="headerlink" title="What It Does"></a>What It Does</h2><p>NEURALDESK-CIT — short for Corporate Intelligence Terminal — takes a company name and generates a structured report covering four key areas:</p>
+<ul>
+<li><strong>Board Members</strong> — current leadership and their roles</li>
+<li><strong>Global Presence</strong> — office locations, production sites, and countries of operation</li>
+<li><strong>Financials</strong> — revenue, net income, currency, and key highlights</li>
+<li><strong>Litigation</strong> — ongoing lawsuits, jurisdictions, and notable cases</li>
+</ul>
+<p>Every section includes a time dimension (“as of” date) so you know the basis of the data.</p>
+<img src="https://raw.githubusercontent.com/FrankS-IntelLab/Pic_Bank/main/screenshot.png" alt="NEURALDESK-CIT screenshot showing a Tesla intelligence report" />
+
+<h2 id="How-It-Works"><a href="#How-It-Works" class="headerlink" title="How It Works"></a>How It Works</h2><p>You configure an LLM provider in the sidebar — OpenAI, Alibaba Cloud Qwen, or any OpenAI-compatible endpoint — enter a company name, and hit <strong>Research Company</strong>. The tool sends a structured prompt to the model and parses the JSON response into organized, readable cards on the left panel. The raw AI output is also visible in the Prompt Terminal on the right, so you can see exactly what the model returned.</p>
+<p>Reports can be exported as <strong>CSV</strong> or <strong>JSON</strong> with one click.</p>
+<p>There’s also a free-form prompt input if you want to ask follow-up questions or run custom queries against the same model.</p>
+<h2 id="Tech-Stack"><a href="#Tech-Stack" class="headerlink" title="Tech Stack"></a>Tech Stack</h2><ul>
+<li>React 19 + Vite</li>
+<li>Modern React 19 patterns: <code>useTransition</code> for pending states, form actions, context API</li>
+<li>No external UI libraries — pure CSS</li>
+<li>Multi-provider LLM support with configurable model, temperature, max tokens, and system prompt</li>
+</ul>
+<h2 id="What’s-Next"><a href="#What’s-Next" class="headerlink" title="What’s Next"></a>What’s Next</h2><p>This is an active project. I’m continuously developing and improving it — expect new intelligence categories, better parsing, and more export options over time. The source code is available on <a target="_blank" rel="noopener" href="https://github.com/FrankS-IntelLab/NEURALDESK_CIT">GitHub</a> under the MIT License.</p>
+<hr>
+<h2 id="Disclaimer"><a href="#Disclaimer" class="headerlink" title="Disclaimer"></a>Disclaimer</h2><p>The intelligence reports generated by NEURALDESK-CIT are produced by AI language models. The data may come from the model’s training knowledge or, if the model supports it, from information retrieved at the time of the query. Reports may contain inaccuracies, outdated information, or estimates. Always verify critical data against authoritative sources (e.g. regulatory filings, official company disclosures) before making decisions based on these reports.</p>
+<p><strong>This tool is provided for research and informational purposes only. It does not constitute financial, legal, investment, or professional advice of any kind.</strong> The authors and contributors accept no responsibility or liability for any loss, damage, cost, or expense incurred as a result of reliance on the information produced by this tool. Users are solely responsible for evaluating the accuracy, completeness, and usefulness of any output and for any decisions or actions taken based on it.</p>
+<p>By using this tool, you acknowledge and agree that you do so entirely at your own risk.</p>
+</div><a class="back-link" href="/">← Back</a></main></body></html>
